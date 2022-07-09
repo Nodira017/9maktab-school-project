@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tadbirlar jadvali</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mian.css">
+    <link rel="stylesheet" href="css/bootstrap.minn.css">
+    <style>
+        .accordion,
+        .accordion-button,
+        .accordion-item {
+            background-color: rgb(10, 1, 10) !important;
+        }
+        
+        .linkk a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div style="box-sizing: border-box!important" class="wrapper">
+            <!-- //carousel -->
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div id="fcarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div style="width: 100%;"><img src="img/1boyclass.jpg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //menu -->
+            <div class="row row-menu">
+                <div id="menu-top" class="col-md-10 col-sm-10 col-xs-10 offset-1 d-flex justify-content-between align-center menu-1 pt-1">
+                    <div id="socialmedia" class="sm d-flex align-items-center">
+                        <span class="text-light">Ijtimoiy tarmoq</span>
+                        <ul class="nav">
+                            <li class="nav-item ps-3 pe-1">
+                                <a href="#" class="nav-link">
+                                    <div><img src="img/facebook_w.png" alt=""></div>
+                                </a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a href="#" class="nav-link">
+                                    <div><img src="img/tgIcon.png" alt=""></div>
+                                </a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a href="#" class="nav-link">
+                                    <div><img src="img/white instagram icon.png" alt=""></div>
+                                </a>
+                            </li>
+                            <li class="nav-item px-2 lang-p">
+                                <p class="text-warning" style="font-size: 20px; padding: 0px; margin: 0px"> | </p>
+                            </li>
+                            <li class="nav-item px-2">
+                                <div class="btn-group">
+                                    <a href="event_dates.html" class="btn btn-outline-light" style="padding: 5px 10px 5px 10px; font-size: 10px;" aria-current="page">RU</a>
+                                    <a href="#" class="btn btn-outline-light active" style="padding: 5px 10px 5px 10px; font-size: 10px;">UZ</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="menu">
+                        <ul id="navtop" class="nav">
+                            <li class="nav-item">
+                                <a href="uz_newsAndEvents.html" class="nav-link text-light">Yangiliklar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link text-light">Tadbirlar jadvali</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="uz_contact_us.html" class="nav-link text-light">Biz bilan bog'lanish</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="col-md-10 col-sm-10 col-xs-10 offset-md-1 d-flex justify-content-between" style="box-sizing: border-box!important">
+                    <div class="logo d-flex align-items-center">
+                        <div class="logoimg"><img src="img/school.png" alt=""></div>
+                        <div>9 Maktab</div>
+                    </div>
+                    <div>
+                        <button id="menu-btn" class="btn navbar-toggler border-3 menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <img style="width: 30px" src="img/text-center.svg">
+                        </button>
+                    </div>
+                    <div class="offcanvas offcanvas-start-lg" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header d-flex d-lg-none">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menyu</h5>
+                            <a href="javascript:void(0) " class="text-reset p-0" data-bs-dismiss="offcanvas" aria-label="close">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFFFFF" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="offcanvas-body p-lg-0">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="uz_newsAndEvents.html">Yangiliklar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="">Tadbirlar jadvali</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="">Ro'yhatdan o'tish</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="uz_student_life.html">Maktab hayoti va ta'lim</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="uz_community.html">Hamjamiyat</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="uz_contact_us.html">Biz bilan bog'lanish</a>
+                                </li>
+                                <li>
+                                    <ul id="offcanvassm" class="nav">
+                                        <li class="nav-item ps-3 pe-1">
+                                            <a href="#" class="nav-link">
+                                                <div><img src="img/facebook_w.png" alt=""></div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item px-1">
+                                            <a href="#" class="nav-link">
+                                                <div><img src="img/tgIcon.png" alt=""></div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item px-2">
+                                            <a href="#" class="nav-link">
+                                                <div><img src="img/white instagram icon.png" alt=""></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="btn-group">
+                                        <a href="event_dates.html" class="btn btn-outline-light" style="padding: 5px 10px 5px 10px; font-size: 10px;" aria-current="page">RU</a>
+                                        <a href="#" class="btn btn-outline-light active" style="padding: 5px 10px 5px 10px; font-size: 10px;">UZ</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="navbottom" class="menu-2 menu">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="" class="nav-link text-light">Ro'yhatdan o'tish</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="uz_student_life.html" class="nav-link text-light">Maktab hayoti va ta'lim</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="uz_community.html" class="nav-link text-light">Hamjamiyat</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row linkk mt-5">
+                <div class="col-md-4 col-sm-6 col-xs-6 offset-md-8 offset-sm-6 offset-xs-6">
+                    <a href="uz_index.html" class="text-warning">Bosh sahifa /</a>
+                    <a href="#" class="text-light">Tadbirlarr jadvali</a>
+                </div>
+            </div>
+            <!-- events_dates_accordion -->
+            <div class="row event_dates mb-5">
+                <div class="mt-5 col-md-6 col-sm-10 col-xs-10 offset-sm-1 offset-xs-1 offset-md-1">
+                    <h1 class="text-warning">Tadbirlar jadvali</h1>
+                    <h3 class="text-light">Tadbirlar jadvali 2021-2022</h3>
+
+                    <div class="accordion" id="accordionExample">
+                        <!-- <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Sentabr-Texnologiya fani o'tkazish oyligi
+                            </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-4">Birinchi xafta</div>
+                                        <div class="col-8">Tehnalogiya fani ochiq darslari</div>
+                                        <div class="col-4">Ikkinchi xafta</div>
+                                        <div class="col-8">Ko'rgazma tashkil etish</div>
+                                        <div class="col-4">Uchinchi xafta</div>
+                                        <div class="col-8">Musobaqa tashkillashtirish</div>
+                                        <div class="col-4">To'rtinchi xafta</div>
+                                        <div class="col-8">Oy yakuni sarhisobi</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Oktabr-Uydagi ta'limni o'tkazish oyligi
+                            </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-4">Birinchi xafta</div>
+                                        <div class="col-8">Uydagi ta'limni to'gri tashkil qilishni o'rgatish</div>
+                                        <div class="col-4">Ikkinchi xafta</div>
+                                        <div class="col-8">Ko'rgazma tashkil etish</div>
+                                        <div class="col-4">Uchinchi xafta</div>
+                                        <div class="col-8">O'quvchilar uydagi ta'limini nazorat qilish</div>
+                                        <div class="col-4">To'rtinchi xafta</div>
+                                        <div class="col-8">Oy yakuni sarhisobi</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              15.11.2021-15.12.2021 - Gumanitar fanlar oyligi
+                            </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <!-- <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-4">Birinchi xafta</div>
+                                        <div class="col-8">Boshlang'ich sinflarda ochiq darslar</div>
+                                        <div class="col-4">Ikkinchi xafta</div>
+                                        <div class="col-8">Ko'rgazma tashkil etish</div>
+                                        <div class="col-4">Uchinchi xafta</div>
+                                        <div class="col-8">Musobaqa tashkillashtirish</div>
+                                        <div class="col-4">To'rtinchi xafta</div>
+                                        <div class="col-8">Oy yakuni sarhisobi</div>
+
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                              12.01.2022-28.02.2022 - Uydagi ta'lim oyligi
+                            </button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+                                <!-- <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-4">Birinchi xafta</div>
+                                        <div class="col-8">Tehnologiya fanidan qo'shimcha darslar</div>
+                                        <div class="col-4">Ikkinchi xafta</div>
+                                        <div class="col-8">Ko'rgazma tashkil etish</div>
+                                        <div class="col-4">Uchinchi xafta</div>
+                                        <div class="col-8">Musobaqa tashkillashtirish</div>
+                                        <div class="col-4">To'rtinchi xafta</div>
+                                        <div class="col-8">Oy yakuni sarhisobi</div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                              01.02.2022-28.02.2022 - Boshlang'ich ta'limni (o'zbek sinflar) uslubiy birlashma oyligi
+                            </button>
+                            </h2>
+                            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+                                <!-- <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-4">Birinchi xafta</div>
+                                        <div class="col-8">Fanlardan ochiq darslar</div>
+                                        <div class="col-4">Ikkinchi xafta</div>
+                                        <div class="col-8">Ko'rgazma tashkil etish</div>
+                                        <div class="col-4">Uchinchi xafta</div>
+                                        <div class="col-8">Musobaqa tashkillashtirish</div>
+                                        <div class="col-4">To'rtinchi xafta</div>
+                                        <div class="col-8">Oy yakuni sarhisobi</div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                              01.03.2022-30.03.2022 - Texalogiya fani uslubiy birlashma oyligi
+                            </button>
+                            </h2>
+                            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+                                <!-- <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-4">Birinchi xafta</div>
+                                        <div class="col-8">Fanlardan ochiq darslar</div>
+                                        <div class="col-4">Ikkinchi xafta</div>
+                                        <div class="col-8">Ko'rgazma tashkil etish</div>
+                                        <div class="col-4">Uchinchi xafta</div>
+                                        <div class="col-8">Musobaqa tashkillashtirish</div>
+                                        <div class="col-4">To'rtinchi xafta</div>
+                                        <div class="col-8">Oy yakuni sarhisobi</div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                              01.04.2022-30.04.2022 Boshlang'ich ta'lim (rus tili) uslubiy birlashma oyligi
+                            </button>
+                            </h2>
+                            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+                                <!-- <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-4">Birinchi xafta</div>
+                                        <div class="col-8">Fanlardan ochiq darslar</div>
+                                        <div class="col-4">Ikkinchi xafta</div>
+                                        <div class="col-8">Ko'rgazma tashkil etish</div>
+                                        <div class="col-4">Uchinchi xafta</div>
+                                        <div class="col-8">Musobaqa tashkillashtirish</div>
+                                        <div class="col-4">To'rtinchi xafta</div>
+                                        <div class="col-8">Oy yakuni sarhisobi</div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <!-- <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading6">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                              Fevral
+                            </button>
+                            </h2>
+                            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-4">Birinchi xafta</div>
+                                        <div class="col-8">Tehnologiya fanidan qo'shimcha darslar</div>
+                                        <div class="col-4">Ikkinchi xafta</div>
+                                        <div class="col-8">Ko'rgazma tashkil etish</div>
+                                        <div class="col-4">Uchinchi xafta</div>
+                                        <div class="col-8">Musobaqa tashkillashtirish</div>
+                                        <div class="col-4">To'rtinchi xafta</div>
+                                        <div class="col-8">Oy yakuni sarhisobi</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading7">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                              Mart
+                            </button>
+                            </h2>
+                            <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-4">Birinchi xafta</div>
+                                        <div class="col-8">Tehnologiya fanidan qo'shimcha darslar</div>
+                                        <div class="col-4">Ikkinchi xafta</div>
+                                        <div class="col-8">Ko'rgazma tashkil etish</div>
+                                        <div class="col-4">Uchinchi xafta</div>
+                                        <div class="col-8">Musobaqa tashkillashtirish</div>
+                                        <div class="col-4">To'rtinchi xafta</div>
+                                        <div class="col-8">Oy yakuni sarhisobi</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading8">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                              Aprel
+                            </button>
+                            </h2>
+                            <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-4">Birinchi xafta</div>
+                                        <div class="col-8">Tehnologiya fanidan qo'shimcha darslar</div>
+                                        <div class="col-4">Ikkinchi xafta</div>
+                                        <div class="col-8">Ko'rgazma tashkil etish</div>
+                                        <div class="col-4">Uchinchi xafta</div>
+                                        <div class="col-8">Musobaqa tashkillashtirish</div>
+                                        <div class="col-4">To'rtinchi xafta</div>
+                                        <div class="col-8">Oy yakuni sarhisobi</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading9">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                              May
+                            </button>
+                            </h2>
+                            <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-4">Birinchi xafta</div>
+                                        <div class="col-8">Tehnologiya fanidan qo'shimcha darslar</div>
+                                        <div class="col-4">Ikkinchi xafta</div>
+                                        <div class="col-8">Ko'rgazma tashkil etish</div>
+                                        <div class="col-4">Uchinchi xafta</div>
+                                        <div class="col-8">Musobaqa tashkillashtirish</div>
+                                        <div class="col-4">To'rtinchi xafta</div>
+                                        <div class="col-8">Oy yakuni sarhisobi</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+            <!-- footer -->
+            <div class="row footerr" style="background-color: rgba(185, 173, 4, 0.445);">
+                <div class="col-10 offset-1 h-4 my-4">
+                    <p style="color: black;">© Angren shahar 9- sonli imkoniyati cheklangan bolalar uchun ixtisoslashtirilgan yordamchi maktab.</p>
+                    <a href="uz_contact_us.html" style="color: black; text-decoration: none; padding-left: 18px;">Biz bilan bog'lanish</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/bootstrap.js "></script>
+    <script src="js/bootstrap.bundle.minn.js "></script>
+</body>
+
+</html>

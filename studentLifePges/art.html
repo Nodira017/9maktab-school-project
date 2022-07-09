@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Искусство</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="../glide/dist/css/glide.theme.min.css">
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/mian.css">
+    <link rel="stylesheet" href="../css/bootstrap.minn.css">
+
+
+    <style>
+        .accordion-button.collapsed::after,
+        .accordion-button::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFFF00'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+        }
+        
+        .accordion-body p {
+            text-align: center;
+        }
+        
+        .new-event-list p {
+            text-align: left;
+            font-size: 18px;
+        }
+        
+        .new-event-list h1 {
+            text-align: center;
+            color: #ffc107;
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .news-line {
+            width: 50%;
+            height: 1px;
+            margin: auto;
+            background-color: #ffc107;
+        }
+        
+        .new-event-list-carusel {
+            display: flex;
+            align-items: center;
+        }
+        
+        col-xs-10 offset-xs-1
+        /* .new-event-list div {
+            border: 1px solid white;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div style="box-sizing: border-box!important" class="wrapper">
+            <!-- //carousel -->
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div id="fcarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div style="width: 100%; height: 600px;"><img src="../img/studentLife/art.jpg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //menu -->
+            <div class="row row-menu">
+                <div id="menu-top" class="col-md-10 col-sm-10 col-xs-10 offset-1 d-flex justify-content-between align-center menu-1 pt-1">
+                    <div id="socialmedia" class="sm d-flex align-items-center">
+                        <span class="text-light">Cоциальная сеть</span>
+                        <ul class="nav">
+                            <li class="nav-item ps-3 pe-1">
+                                <a href="#" class="nav-link">
+                                    <div><img src="../img/facebook_w.png" alt=""></div>
+                                </a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a href="#" class="nav-link">
+                                    <div><img src="../img/tgIcon.png" alt=""></div>
+                                </a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a href="#" class="nav-link">
+                                    <div><img src="../img/white instagram icon.png" alt=""></div>
+                                </a>
+                            </li>
+                            <li class="nav-item px-2 lang-p">
+                                <p class="text-warning" style="font-size: 20px; padding: 0px; margin: 0px"> | </p>
+                            </li>
+                            <li class="nav-item px-2">
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-outline-light active" style="padding: 5px 10px 5px 10px; font-size: 10px;" aria-current="page">RU</a>
+                                    <a href="uz_art.html" class="btn btn-outline-light" style="padding: 5px 10px 5px 10px; font-size: 10px;">UZ</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="menu">
+                        <ul id="navtop" class="nav">
+                            <li class="nav-item">
+                                <a href="../newsAndEvents.html" class="nav-link text-light">Новости и события</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../event_dates.html" class="nav-link text-light">Даты событий</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../contact_us.html" class="nav-link text-light">Связаться с нами</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="col-md-10 col-sm-10 col-xs-10 offset-md-1 d-flex justify-content-between" style="box-sizing: border-box!important">
+                    <div class="logo d-flex align-items-center">
+                        <div class="logoimg"><img src="../img/school.png" alt=""></div>
+                        <div>9 Школа</div>
+                    </div>
+                    <div>
+                        <button id="menu-btn" class="btn navbar-toggler border-3 menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <img style="width: 30px" src="../img/text-center.svg">
+                        </button>
+                    </div>
+                    <div class="offcanvas offcanvas-start-lg" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header d-flex d-lg-none">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Меню</h5>
+                            <a href="javascript:void(0) " class="text-reset p-0" data-bs-dismiss="offcanvas" aria-label="close">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFFFFF" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="offcanvas-body p-lg-0">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../newsAndEvents.html">Новости и события</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../event_dates.html">Даты событий</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../enrolment.html">Зачисление</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../student_life.html">Школьная жизнь и обучение</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../community.html">Сообщество</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../contact_us.html">Связаться с нами</a>
+                                </li>
+                                <li>
+                                    <ul id="offcanvassm" class="nav">
+                                        <li class="nav-item ps-3 pe-1">
+                                            <a href="#" class="nav-link">
+                                                <div><img src="../img/facebook_w.png" alt=""></div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item px-1">
+                                            <a href="#" class="nav-link">
+                                                <div><img src="../img/tgIcon.png" alt=""></div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item px-2">
+                                            <a href="#" class="nav-link">
+                                                <div><img src="../img/white instagram icon.png" alt=""></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-outline-light active" style="padding: 5px 10px 5px 10px; font-size: 10px;" aria-current="page">RU</a>
+                                        <a href="uz_art.html" class="btn btn-outline-light" style="padding: 5px 10px 5px 10px; font-size: 10px;">UZ</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="navbottom" class="menu-2 menu">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="../enrolment.html" class="nav-link text-light">Зачисление</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../student_life.html" class="nav-link text-light">Школьная жизнь и обучение</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../community.html" class="nav-link text-light">Сообщество</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- links -->
+            <div class="row linkk mt-5">
+                <div class="col-md-4 col-sm-6 col-xs-6 offset-md-8 offset-sm-6 offset-xs-6">
+                    <a href="index.html" class="text-warning">Главная /</a>
+                    <a href="../student_life.html" class="text-warning">Школьная жизнь и обучение /</a>
+                    <a href="#" class="text-light">Искусство</a>
+                </div>
+            </div>
+
+            <!-- 03.12.2021 -->
+            <div id="event1022022" class="row new-event-list">
+                <div class="col-md-6 col-xs-10 offset-xs- new-event-list-carusel">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../img/study/art/03122021.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                    </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                    </button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-10 offset-xs-1 news-text">
+                    <h1>Kонкурс рисунков ко «День доброты»</h1>
+                    <p>
+                        В школе прошел конкурс рисунков, «День доброты». Учащиеся рисовали на бумаге сценки и героев мультфильмов.
+                    </p>
+                </div>
+            </div>
+            <div class="news-line"></div>
+
+            <!-- 23.11.2021 -->
+            <div id="event1022022" class="row new-event-list">
+                <div class="col-md-6 col-xs-10 offset-xs- new-event-list-carusel">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../img/study/art/231120211.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="../img/study/art/231120212.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                    </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                    </button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-10 offset-xs-1 news-text">
+                    <h1>Фотоконкурс «Мой Президент»</h1>
+                    <p>
+                        Фотоконкурс, посвященный 29-летию Конституции Республики Узбекистан, прошел под девизом «Мой Президент».
+                    </p>
+                </div>
+            </div>
+            <div class="news-line"></div>
+
+            <!-- 18.11.2021 -->
+            <div id="event1022022" class="row new-event-list">
+                <div class="col-md-6 col-xs-10 offset-xs- new-event-list-carusel">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../img/study/art/221220213.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/study/art/221220211.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/study/art/221220212.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                    </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                    </button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-10 offset-xs-1 news-text">
+                    <h1>Kонкурс рисунков «Мой папа, мама и я»</h1>
+                    <p>
+                        В школе прошел конкурс рисунков под девизом «Папа, мама и я»
+                    </p>
+                </div>
+            </div>
+            <div class="news-line"></div>
+
+            <!-- to'garak -->
+            <div id="event1022022" class="row new-event-list">
+                <div class="col-md-6 col-xs-10 offset-xs- new-event-list-carusel">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../img/study/art/05122021.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                    </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                    </button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-10 offset-xs-1 news-text">
+                    <h1>«Творческий ученик»</h1>
+                    <p>
+                        Работа учителя информатики с учащимися кружка «Творческий ученик» школы №9 г. Ангрена. </p>
+                </div>
+            </div>
+
+            <div class="row footerr" style="background-color: rgba(185, 173, 4, 0.445);">
+                <div class="col-10 offset-1 h-4 my-4">
+                    <p style="color: black;">© Специализированная-вспомогательная школа № 9 для детей с ограниченными возможностями</p>
+                    <a href="contact_us.html" style="color: black; text-decoration: none; padding-left: 18px;"> Связаться с нами</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/jquery-3.5.1.min.js"></script>
+        <script src="../glide/dist/glide.min.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="../js/bootstrap.bundle.minn.js"></script>
+
+
+</body>
+
+</html>
